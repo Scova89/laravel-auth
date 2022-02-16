@@ -8,7 +8,19 @@
                     <div class="card-header"><h3>{{$post->title}}</h3></div>
 
                     <div class="card-body">
-                        
+                        <div>
+                            
+                            @if ($post->published)
+                            <h6>Stato: <span class="badge badge-primary">Pubblicato</span></h6>
+                                
+                            @else
+                            <h6>Stato: <span class="badge badge-danger">Bozza</span></h6>
+                                
+                            @endif
+                            
+                        </div>
+
+                        {{$post->content}}
                         
                     </div>
                 </div>
