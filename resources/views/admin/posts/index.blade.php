@@ -8,7 +8,10 @@
                     <div class="card-header">{{ __('Posts list') }}</div>
 
                     <div class="card-body">
-                        
+                        <div class="mb-4">
+                            <a href="{{route("posts.create")}}"><button type="button" class="btn btn-success">Crea post</button></a>
+                        </div>
+
                         <table class="table">
                             <thead>
                               <tr>
