@@ -130,8 +130,7 @@ class PostController extends Controller
         $post->content = $data["content"];
         if(isset($data["published"])) {
             $post->published = true;
-        
-
+        }
 
 
         $post->save();
